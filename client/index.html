@@ -15,11 +15,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Bookstore</a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul id="myTab" class="nav navbar-nav">
-                    <li class="active">
+                    <li id="Bookstore">
+                        <a class="navbar-brand" data-toggle="tab" href="#">Bookstore</a>
+                    </li>
+                    <li class="active" id="Home">
                         <a class="nav-item nav-link active" data-toggle="tab" href="#">Home</a>
                     </li>
                     <li >
@@ -56,7 +58,11 @@
 $(document).ready(function () {
         $('ul.nav > li').click(function (e) {
             $('ul.nav > li').removeClass('active');
-            $(this).addClass('active');                
+
+            if(this.id == "Bookstore"){
+                $('#Home').addClass('active');
+            }
+            else $(this).addClass('active');    
         });            
     });
 </script>

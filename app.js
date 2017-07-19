@@ -19,7 +19,6 @@ app.get('/api/books', function(req, res){
 		if(err){
 			throw err;
 		}
-        console.log(books);
 		res.json(books);
 	});
 })
@@ -104,7 +103,7 @@ app.get('/listBooks', function (req, res) {
     });
 })
 
-var server = app.listen(99, function () {
+var server = app.listen(100, function () {
     var host = server.address().address;
     var port = server.address().port;
     console.log("App listening at http://%s:%s", host, port);
