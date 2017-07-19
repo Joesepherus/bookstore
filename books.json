@@ -1,0 +1,47 @@
+[
+	{
+    	"title" : "Watch Me Disappear",
+	  	"genre" : "Fiction",
+	  	"description" : "The disappearance of a beautiful, charismatic mother leaves her family to piece together her secrets in this propulsive novel for fans of Big Little Lies—from the bestselling author of All We Ever Wanted Was Everything.",
+	  	"author": "{\"id1\":\"Janelle Brown\"}",
+	  	"publisher": "Random House Publishing Group",
+	  	"pages": "368",
+	  	"image_url": "https://prodimage.images-bn.com/pimages/9780812989472_p0_v2_s192x300.jpg"
+   },
+   {
+    	"title" : "Where the Light Falls",
+	  	"genre" : "Fiction",
+	  	"description" : "A rich and sweeping novel of courage, duty, sacrifice, and love set during the French Revolution from New York Times bestselling author Allison Pataki and her brother Owen Pataki",
+	  	"author": "{\"id1\":\"Allison Pataki\",\"id2\":\"Owen Pataki\"}",
+	  	"publisher": "Random House Publishing Group",
+	  	"pages": "384",
+	  	"image_url": "https://prodimage.images-bn.com/pimages/9780399591686_p0_v2_s192x300.jpg"
+   },
+   {
+    	"title" : "Domina (Maestra Series #2)",
+	  	"genre" : "Fiction",
+	  	"description" : "In this riveting sequel to the instant New York Times bestseller, Maestra, femme fatale Judith Rashleigh once again leads readers into the mesmerizing and dangerous underworld of Europe’s glamorous elite.",
+	  	"author": "{\"id1\":\"L. S. Hilton\"}",
+	  	"publisher": "Penguin Publishing Group",
+	  	"pages": "320",
+	  	"image_url": "https://prodimage.images-bn.com/pimages/9780399184826_p0_v1_s192x300.jpg"
+   },
+   	{
+    	"title" : "The Almost Sisters",
+	  	"genre" : "Fiction",
+	  	"description" : "With empathy, grace, humor, and piercing insight, the author of gods in Alabama pens a powerful, emotionally resonant novel of the South that confronts the truth about privilege, family, and the distinctions between perception and reality---the stories we tell ourselves about our origins and who we really are.",
+	  	"author": "{\"id1\":\"Joshilyn Jackson\"}",
+	  	"publisher": "HarperCollins Publishers",
+	  	"pages": "352",
+	  	"image_url": "https://prodimage.images-bn.com/pimages/9780062105714_p0_v1_s192x300.jpg"
+   },
+   	{
+    	"title" : "The Late Show",
+	  	"genre" : "Thrillers",
+	  	"description" : "Introducing Renée Ballard, a fierce young detective fighting to prove herself on the LAPD's toughest beat, from #1 New York Times bestselling author Michael Connelly.",
+	  	"author": "{\"id1\":\"Michael Connelly\"}",
+	  	"publisher": "Little, Brown and Company",
+	  	"pages": "448",
+	  	"image_url": "https://prodimage.images-bn.com/pimages/9780316225984_p0_v3_s192x300.jpg"
+   }
+]

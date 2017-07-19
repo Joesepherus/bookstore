@@ -1,0 +1,64 @@
+<div ng-app="myApp" ng-controller="booksController">
+	<form id="surveyForm" method="post" class="form-horizontal" ng-submit="addBook()"  ng-init="addBookLayout()">
+	    <div class="col-md-12">
+			<div class="col-md-6">
+				<div class="form-group">
+				    <label>Title</label>
+				    <div >
+				        <input type="text" class="form-control" ng-model="book.title"/>
+				    </div>
+				</div>
+				<div class="form-group">
+				    <label>Description</label>
+				    <div>
+				        <input type="text" class="form-control" ng-model="book.description"/>
+				    </div>
+				</div>
+
+				<div class="form-group">
+				    <label>Publisher</label>
+				    <div>
+				        <input type="text" class="form-control" ng-model="book.publisher"/>
+				    </div>
+				</div>
+
+				<div class="form-group">
+				    <label>Genre</label>
+				    <div>
+				        <input type="text" class="form-control" ng-model="book.genre"/>
+				    </div>
+				</div>
+
+				<div class="form-group">
+				    <label>Pages</label>
+				    <div>
+				        <input type="text" class="form-control" ng-model="book.pages"/>
+				    </div>
+				</div>
+
+				<div class="form-group">
+				    <label>Image URL</label>
+				    <div>
+				        <input type="text" class="form-control" ng-model="book.image_url"/>
+				    </div>
+				</div>
+
+         		<div ng-repeat="tex in texs" class="form-group">
+	            	<label>Authors:</label>
+	               	<div>
+	                	<input type="text" class="form-control" ng-model="book.author['id'+($index+1)]"/>
+	               	</div>
+	               	<button class="btn btn-success" type="button" id="1" ng-click="add($event)">
+                		<span class="glyphicon glyphicon-plus"></span>
+            		</button>
+	               	<button class="btn btn-danger removeButton" type="button" ng-show="$last" ng-click="remove(id)">
+                		<span class="glyphicon glyphicon-minus"></span>
+            		</button>
+	            </div>
+         	</div>
+        </div>
+        <div class="col-md-12">
+	    	<button type="submit" class="btn btn-default surveyForm">Submit</button>
+	    </div>
+	</form>
+</div>

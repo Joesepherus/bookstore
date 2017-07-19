@@ -7,7 +7,6 @@ var schema = mongoose.Schema({
 	},
 	genre:{
 		type: String,
-		required: true
 	},
 	description:{
 		type: String,
@@ -19,14 +18,12 @@ var schema = mongoose.Schema({
 	},
 	publisher:{
 		type: String,
-		required: true
 	},
 	pages:{
 		type: String,
 	},
 	image_url:{
 		type: String,
-		required: true
 	},
 	create_date:{
 		type: Date,
@@ -45,17 +42,27 @@ module.exports.getBookById = function(bookId, callback){
 }
 
 module.exports.addBook = function(book, callback){
-	Book.create(book, callback);
+	var json = {
+		title: book.title,
+        genre: book.genre,
+        description: book.description,
+        author: JSON.stringify(book.author),
+        publisher: book.publisher,
+        pages: book.pages,
+        image_url: book.image_url
+	}
+	Book.create(json, callback);
 }
 
-module.exports.updateBook = function(_id, book, options, callback){
-	var query = {id: _id};
+module.exports.updateBook = function(id, book, options, callback){
+	var query = {_id: id};
 	var update = {
 		title: book.title,
         genre: book.genre,
         description: book.description,
-        author: book.author,
+        author: JSON.stringify(book.author),
         publisher: book.publisher,
+        pages: book.pages,
         image_url: book.image_url
 	}
 	Book.findOneAndUpdate(query, update, options, callback);
@@ -63,6 +70,5 @@ module.exports.updateBook = function(_id, book, options, callback){
 
 module.exports.deleteBook = function(id, callback){
 	var query = {_id: id};
-	console.log(id);
 	Book.deleteOne(query, callback);
 }
